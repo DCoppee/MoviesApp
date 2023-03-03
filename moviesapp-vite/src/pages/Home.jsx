@@ -3,6 +3,7 @@ import Header from '/src/components/Header';
 import Spotlight from '/src/components/Spotlight';
 import Trending from '/src/components/Trending'
 import Footer from '/src/components/Footer';
+import '/src/styles/Home.css'
 
 const Home = () => {
   const apiKey = '03249b4940f77c24ab0611c35cc8a22f';
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className='div-home'>
       <Header /><Spotlight movies={movies} /><Trending movies={movies} /><Footer />
     </div>
   );

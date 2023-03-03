@@ -1,0 +1,38 @@
+.wrapper-spotlight {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .video-spotlight {
+        width: 100%; 
+        height: auto;   
+    }
+    .div-play {
+        display: flex;
+        flex-direction: row;
+        padding: 3vw;
+        background-color: greenyellow;
+        position: absolute;
+        transform: translate(10%,-100%);
+        z-index: 1;
+        width: 70%;
+        height: 40%;
+        .img-play {
+            width: 10vw;
+        }
+        .p-play {
+            padding-left: 2vw;
+            height: fit-content;
+            
+            .h1-play {
+                color: #BCBCBC;
+                font-size: 4vw;
+                line-height: 2vw;
+            }
+            .h2-play{
+                color: #FFFFFF;
+                font-size: 5vw;
+                line-height: 5vw;
+            }
+        }
+    }
+}

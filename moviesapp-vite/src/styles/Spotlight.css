@@ -1,0 +1,38 @@
+.wrapper-spotlight {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.wrapper-spotlight .video-spotlight {
+  width: 100%;
+  height: auto;
+}
+.wrapper-spotlight .div-play {
+  display: flex;
+  flex-direction: row;
+  padding: 3vw;
+  background-color: greenyellow;
+  position: absolute;
+  transform: translate(10%, -100%);
+  z-index: 1;
+  width: 70%;
+  height: 40%;
+}
+.wrapper-spotlight .div-play .img-play {
+  width: 10vw;
+}
+.wrapper-spotlight .div-play .p-play {
+  padding-left: 2vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.wrapper-spotlight .div-play .p-play .h1-play {
+  color: #BCBCBC;
+  font-size: 4vw;
+  line-height: 2vw;
+}
+.wrapper-spotlight .div-play .p-play .h2-play {
+  color: #FFFFFF;
+  font-size: 5vw;
+  line-height: 5vw;
+}/*# sourceMappingURL=Spotlight.css.map */
