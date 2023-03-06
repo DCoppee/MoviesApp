@@ -1,0 +1,21 @@
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style-type: none;
+}
+.list-nav .home-link {
+  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+}
+.list-nav .search-link {
+  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+}
+.list-nav .login-link {
+  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+}/*# sourceMappingURL=Footer.css.map */

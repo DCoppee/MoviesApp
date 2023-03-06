@@ -1,0 +1,30 @@
+.h1-trend {
+  color: white;
+  font-weight: lighter;
+}
+
+.div-trend {
+  width: 88vw;
+}
+.div-trend .table-trend {
+  overflow-x: auto;
+}
+.div-trend .table-trend .img-trend {
+  width: 60vw;
+  border-radius: 20px;
+}
+.div-trend .table-trend .img-trend:hover {
+  width: 65vw;
+}
+.div-trend .table-trend .p-trend {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 3vw;
+  background-color: rgba(218, 218, 218, 0.2509803922);
+  position: absolute;
+  transform: translate(35vw, -94vw);
+  z-index: 1;
+  width: 17vw;
+  border-radius: 20px;
+}/*# sourceMappingURL=Trending.css.map */

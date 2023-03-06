@@ -5,32 +5,35 @@
     .video-spotlight {
         width: 100%; 
         height: auto;   
+        border-radius: 20px;
     }
     .div-play {
         display: flex;
         flex-direction: row;
         padding: 3vw;
-        background-color: greenyellow;
+        background-color: #dadada40;
         position: absolute;
-        transform: translate(10%,-100%);
+        transform: translate(6%,-120%);
         z-index: 1;
-        width: 70%;
-        height: 40%;
+        width: 60%;
+        height: 33%;
+        border-radius: 20px;
         .img-play {
-            width: 10vw;
+            width: 8vw;
         }
         .p-play {
             padding-left: 2vw;
-            height: fit-content;
+            margin: 0 0 0 2vw;
             
             .h1-play {
                 color: #BCBCBC;
-                font-size: 4vw;
+                font-size: 3vw;
                 line-height: 2vw;
+                margin-top: 0vw;
             }
             .h2-play{
                 color: #FFFFFF;
-                font-size: 5vw;
+                font-size: 4vw;
                 line-height: 5vw;
             }
         }

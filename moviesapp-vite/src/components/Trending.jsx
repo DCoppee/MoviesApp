@@ -1,23 +1,26 @@
 import React from 'react';
+import '/src/styles/Trending.css';
 
 const Trending = ({movies}) => {
     const bestMvIndex = movies.sort((a, b) => b.vote_average - a.vote_average).slice(0, 10);
     const movie = movies[bestMvIndex];
 
     return (
-        <table>
-        <tbody>
-            <tr>
-            {movies.map(movie => (
-                <td key={movie.id}>
-                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Movie poster"></img>
-                <h1>{movie.title}</h1>
-                <p>⭐ {movie.vote_average}</p>
-                </td>
-            ))}
-            </tr>
-        </tbody>
-        </table>
+        <div className='div-trend'>
+            <h1 className='h1-trend'>Trending</h1>
+            <table className='table-trend'>
+            <tbody className='tbody-trend'>
+                <tr className='tr-trend'>
+                {movies.map(movie => (
+                    <td className='td-trend' key={movie.id}>
+                    <img className='img-trend' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Movie poster"></img>
+                    <p className='p-trend'>tMDb ⭐ {movie.vote_average}</p>
+                    </td>
+                ))}
+                </tr>
+            </tbody>
+            </table>
+        </div>
     );
 };
 

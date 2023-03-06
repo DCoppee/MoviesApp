@@ -1,0 +1,29 @@
+.h1-trend {
+    color: white;
+    font-weight: lighter;
+}
+.div-trend {
+    width: 88vw;
+    .table-trend {
+        overflow-x: auto;
+        .img-trend {
+            width: 60vw;
+            border-radius: 20px;
+            &:hover {
+                width: 65vw;
+            }
+        }
+        .p-trend {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 3vw;
+            background-color: #dadada40;
+            position: absolute;
+            transform: translate(35vw,-94vw);
+            z-index: 1;
+            width: 17vw;
+            border-radius: 20px;
+        }
+    }
+}
