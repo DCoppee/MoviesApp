@@ -1,40 +1,5 @@
-.wrapper-spotlight {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-.wrapper-spotlight .video-spotlight {
-  width: 100%;
-  height: auto;
+.video-spotlight {
+  width: 90vw;
+  border-style: none;
   border-radius: 20px;
-}
-.wrapper-spotlight .div-play {
-  display: flex;
-  flex-direction: row;
-  padding: 3vw;
-  background-color: rgba(218, 218, 218, 0.2509803922);
-  position: absolute;
-  transform: translate(6%, -120%);
-  z-index: 1;
-  width: 60%;
-  height: 33%;
-  border-radius: 20px;
-}
-.wrapper-spotlight .div-play .img-play {
-  width: 8vw;
-}
-.wrapper-spotlight .div-play .p-play {
-  padding-left: 2vw;
-  margin: 0 0 0 2vw;
-}
-.wrapper-spotlight .div-play .p-play .h1-play {
-  color: #BCBCBC;
-  font-size: 3vw;
-  line-height: 2vw;
-  margin-top: 0vw;
-}
-.wrapper-spotlight .div-play .p-play .h2-play {
-  color: #FFFFFF;
-  font-size: 4vw;
-  line-height: 5vw;
 }/*# sourceMappingURL=Spotlight.css.map */
