@@ -7,15 +7,21 @@
           padding-inline-start: 0;
   list-style-type: none;
 }
-.list-nav .home-link {
-  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
-  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+.list-nav .img-home {
+  cursor: pointer;
 }
-.list-nav .search-link {
-  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
-  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+.list-nav .img-home:hover {
+  fill: rgb(255, 143, 113);
 }
-.list-nav .login-link {
-  color: -webkit-linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
-  color: linear-gradient(90deg, rgb(255, 143, 113), rgb(239, 45, 26));
+.list-nav .img-search {
+  cursor: pointer;
+}
+.list-nav .img-search:hover {
+  color: rgb(255, 143, 113);
+}
+.list-nav .img-login {
+  cursor: pointer;
+}
+.list-nav .img-login:hover {
+  color: rgb(255, 143, 113);
 }/*# sourceMappingURL=Footer.css.map */

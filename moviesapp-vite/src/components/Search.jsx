@@ -1,43 +1,48 @@
-import React, { useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import useFetch from "react-fetch-hook";
+import { FaSearch } from "react-icons/fa";
+import '/src/styles/Search.css';
 
-function Search({ movies }) {
-  const [query, setQuery] = useState('');
-  const navigate = useNavigate();
+const apiKey = '03249b4940f77c24ab0611c35cc8a22f';
 
-  const handleInputChange = (e) => {
-    setQuery(e.target.value);
-  };
+const Search = () => {
+  const [searchMv, setSearchMv] = useState("");
+  const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchMv}`;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const results = movies.filter((movie) =>
-      movie.title.toLowerCase().includes(query.toLowerCase())
-    );
-    if (results.length > 0) {
-      const movieId = results[0].id;
-      navigate(`/details/${movieId}`);
-    } else {
-      // Gérer le cas où aucun résultat n'est trouvé
-    }
-  };
+  const { isLoading, data } = useFetch(API_URL);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="div-search">
       <div className="search-container">
+        <FaSearch className="search-icon" />
         <input
-          type="text"
-          placeholder="Rechercher..."
-          value={query}
-          onChange={handleInputChange}
+          className="input-search"
+          type="search"
+          onChange={(e) => setSearchMv(e.target.value)}
+          name=""
+          id=""
+          placeholder="Movie title"
         />
-        <button type="submit">
-          <FaSearch />
-        </button>
       </div>
-    </form>
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <ul className="list-results">
+          {data.results.map((movie) => (
+            <li key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={movie.title}
+              />
+              <p className="p-title">
+                <b>{movie.title}</b>
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
-}
+};
 
 export default Search;

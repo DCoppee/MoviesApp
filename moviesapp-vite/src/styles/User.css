@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.div-user {
+  margin-bottom: 10vw;
+}
+.div-user .h1-user {
+  color: white;
+  font-weight: lighter;
+  margin-top: 0;
+}
+.div-user .form-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 12vw;
+  background: #211F30;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.369);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 15px;
+  width: 85vw;
+  padding: 3vw;
+  color: #BBBBBB;
+  font-size: larger;
+}
+.div-user .form-user .div-email {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3vw;
+}
+.div-user .form-user .div-password {
+  display: flex;
+  flex-direction: column;
+}
+.div-user .form-user .div-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 6vw;
+  padding-bottom: 3vw;
+}
+.div-user .form-user .div-btn .btn-user {
+  display: flex;
+  justify-content: center;
+  padding: 4vw;
+  border-radius: 30px;
+  border: none;
+  background-color: #BBBBBB;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.369);
+  color: #211F30;
+  font-weight: bolder;
+}/*# sourceMappingURL=User.css.map */

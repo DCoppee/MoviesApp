@@ -2,4 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #15141F;
+}
+body .div-discover {
+  margin: 0 4vw 0 4vw;
 }/*# sourceMappingURL=Discover.css.map */

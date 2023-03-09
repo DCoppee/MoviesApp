@@ -8,13 +8,13 @@ const Footer = () => {
         <footer className='footer-section'>
             <ul className='list-nav'>
                 <NavLink to ="/" className="nav-link">
-                    <li className='home-link'><img src='/src/assets/logoHome.svg'></img></li>
+                    <li className='home-link'><img className='img-home' src='/src/assets/logoHome.svg'></img></li>
                 </NavLink>
-                <NavLink to="/search" className="nav_link">
-                    <li className='search-link'><img src='/src/assets/logoSearch.svg'></img></li>
+                <NavLink to="/Discover" className="nav_link">
+                    <li className='search-link'><img className='img-search' src='/src/assets/logoSearch.svg'></img></li>
                 </NavLink>
-                <NavLink to="/login" className="nav_link">
-                    <li className='login-link'><img src='/src/assets/logoUser.svg'></img></li>
+                <NavLink to="/Login" className="nav_link">
+                    <li className='login-link'><img className='img-login' src='/src/assets/logoUser.svg'></img></li>
                 </NavLink>
             </ul>
         </footer>

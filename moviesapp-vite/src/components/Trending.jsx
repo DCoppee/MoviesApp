@@ -30,7 +30,6 @@ const Trending = () => {
     setActive(newActive);
   }
  
-
   return (
     <div className='div-trend'>
       <h1 className='h1-trend'>Trending</h1>

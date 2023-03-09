@@ -1,0 +1,19 @@
+.h2-categories {
+  font-size: 4vw;
+  color: white;
+  font-weight: lighter;
+}
+
+.img-movie {
+  border-radius: 15px;
+  width: 40vw;
+}
+
+.h3-movie {
+  font-size: 4vw;
+  color: white;
+  font-weight: lighter;
+  margin-top: 2vw;
+  width: 40vw;
+  text-align: center;
+}/*# sourceMappingURL=Categories.css.map */
