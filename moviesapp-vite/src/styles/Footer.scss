@@ -5,22 +5,33 @@
     align-items: center;
     padding-inline-start: 0;
     list-style-type: none;
+  
     .img-home {
-        cursor: pointer;
-        &:hover {
-            fill: rgb(255, 143, 113);
-        }
+      cursor: pointer;
     }
+  
     .img-search {
-        cursor: pointer;
-        &:hover {
-            color: rgb(255, 143, 113);
-        }
+      cursor: pointer;
     }
+  
     .img-login {
-        cursor: pointer;
-        &:hover {
-            color: rgb(255, 143, 113);
+      cursor: pointer;
+    }
+  
+    .nav-link {
+      &.active {
+        .img-home {
+            fill: #FF8F71;
         }
-    }    
-}
+  
+        .img-search {
+            fill: #FF8F71;
+        }
+  
+        .img-login {
+            fill: #FF8F71;
+        }
+      }
+    }
+  }
+  

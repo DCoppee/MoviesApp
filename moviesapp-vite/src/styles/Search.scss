@@ -12,3 +12,14 @@
     background-color: #211F30;
     padding-left: 15vw;
 }
+.list-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  .img-results {
+      border-radius: 15px;
+      width: 40vw;
+      padding: 2.5vw;
+  }
+}

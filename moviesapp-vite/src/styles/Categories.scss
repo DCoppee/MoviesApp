@@ -1,17 +1,40 @@
-.h2-categories {
-    font-size: 4vw;
-    color: white;
-    font-weight: lighter;
+.div-categories {
+    height: calc(80vw);
+    overflow-y: scroll;
+    .tb-categories {
+        padding-bottom: 5vw;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 3vw;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        .selected {
+            color: #FF8F71;
+        }
+    }
 }
+.div-movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     .img-movie {
         border-radius: 15px;
         width: 40vw;
+        padding: 2.5vw;
     }
     .h3-movie {
         font-size: 4vw;
         color: white;
         font-weight: lighter;
-        margin-top: 2vw;
+        margin: 3vw;
         width: 40vw;
         text-align: center;
     }
+}

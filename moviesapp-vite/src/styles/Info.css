@@ -1,3 +1,64 @@
 .div-info {
   color: white;
+}
+.div-info .div-title-pop-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-info .div-title-pop-info .h1-title-info {
+  font-weight: lighter;
+  font-size: x-large;
+}
+.div-info .div-title-pop-info .p-pop-info {
+  font-size: x-small;
+  background-color: #211F30;
+  width: 9vw;
+  height: 6vw;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 6vw;
+  color: #E0E0E0;
+}
+.div-info .div-dur-vote-info {
+  display: flex;
+  align-items: center;
+  height: 8vw;
+}
+.div-info .div-dur-vote-info .p-dur-info {
+  font-size: small;
+  color: #BCBCBC;
+  padding-right: 5vw;
+}
+.div-info .div-dur-vote-info .p-vote-info {
+  font-size: small;
+  color: #BCBCBC;
+}
+.div-info .div-release-info .h2-release-info {
+  font-size: large;
+  font-weight: lighter;
+}
+.div-info .div-release-info .p-release-info {
+  font-size: small;
+  color: #BCBCBC;
+}
+.div-info .div-genre-info .h2-genre-info {
+  font-size: large;
+  font-weight: lighter;
+}
+.div-info .div-genre-info .p-genre-info {
+  font-size: small;
+  color: #BCBCBC;
+}
+.div-info .div-synopsis-info .h2-synopsis-info {
+  font-size: large;
+  font-weight: lighter;
+}
+.div-info .div-synopsis-info .p-synopsis-info {
+  font-size: small;
+  color: #BCBCBC;
+}
+.div-info .div-related-info .h2-related-info {
+  font-size: large;
+  font-weight: lighter;
 }/*# sourceMappingURL=Info.css.map */

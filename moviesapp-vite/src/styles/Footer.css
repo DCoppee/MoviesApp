@@ -10,18 +10,18 @@
 .list-nav .img-home {
   cursor: pointer;
 }
-.list-nav .img-home:hover {
-  fill: rgb(255, 143, 113);
-}
 .list-nav .img-search {
   cursor: pointer;
-}
-.list-nav .img-search:hover {
-  color: rgb(255, 143, 113);
 }
 .list-nav .img-login {
   cursor: pointer;
 }
-.list-nav .img-login:hover {
-  color: rgb(255, 143, 113);
+.list-nav .nav-link.active .img-home {
+  fill: #FF8F71;
+}
+.list-nav .nav-link.active .img-search {
+  fill: #FF8F71;
+}
+.list-nav .nav-link.active .img-login {
+  fill: #FF8F71;
 }/*# sourceMappingURL=Footer.css.map */

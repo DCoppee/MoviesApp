@@ -1,44 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '/src/styles/Info.css';
 
-const apiKey = '03249b4940f77c24ab0611c35cc8a22f';
-
-const Info = ({ movieId }) => {
-  const [movieData, setMovieData] = useState({});
-  const [videoKey, setVideoKey] = useState('');
-
-  useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
-      .then(response => response.json())
-      .then(data => {
-        setMovieData(data);
-        if (data.videos.results.length > 0) {
-          setVideoKey(data.videos.results[0].key);
-        }
-      })
-      .catch(error => console.error(error));
-  }, [movieId]);
-
-  const { title, poster_path, overview, runtime, release_date } = movieData;
+const Info = () => {
 
   return (
-    <div className='div-info'>
-      <h1 className='h1-info'>{title}</h1>
-      {videoKey ? (
-        <iframe
-          width="560"
-          height="315"
-          src={`https://www.youtube.com/embed/${videoKey}`}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      ) : (
-        <img className='img-info' src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt="Poster" />
-      )}
-      <p className='p-overview'>{overview}</p>
-      <p className='p-runtime'>Duration: {runtime} minutes</p>
-      <p className='p-release'>Release date: {release_date}</p>
+    <div className="div-info">
+      <div className='div-title-pop-info'>
+        <h1 className='h1-title-info'>Star Wars: The Last Jedi</h1>
+        <p className='p-pop-info'>4K</p>
+      </div>
+      <div className='div-dur-vote-info'>
+        <p className='p-dur-info'>🕒 152 minutes</p>
+        <p className='p-vote-info'>⭐ 7.0 (tMDb)</p>
+      </div>
+        <div className='div-release-info'>
+          <h2 className='h2-release-info'>Release date</h2>
+          <p className='p-release-info'>December 9, 2017</p>
+        </div>
+        <div className='div-genre-info'>
+          <h2 className='h2-genre-info'>Genre</h2>
+          <p className='p-genre-info'>Action</p>
+          <p className='p-genre-info'>Sc-Fi</p>
+        </div>
+        <div className='div-synopsis-info'>
+          <h2 className='h2-synopsis-info'>Synopsis</h2>
+          <p className='p-synopsis-info'>Rey (Daisy Ridley) finally manages to find the legendary Jedi knight, Luke Skywalker (Mark Hamill) on an island with a magical aura. The heroes of The Force Awakens including Leia, Finn <span>Read more...</span></p>
+        </div>
+        <div className='div-related-info'>
+          <h2 className='h2-related-info'>Related movies</h2>
+        </div>
     </div>
   );
 };
